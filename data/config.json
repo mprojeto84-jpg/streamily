@@ -1,0 +1,52 @@
+{
+  "site": {
+    "title": "Streamily TV - Zero Megas Movitel",
+    "description": "Assista filmes e TV sem gastar megas! Exclusivo Movitel.",
+    "keywords": "streamily tv, movitel, filmes gratis, tv sem megas",
+    "version": "5.5",
+    "releaseDate": "2026-09-01"
+  },
+  "app": {
+    "size": "17.02 MB",
+    "minAndroid": "5.0+",
+    "apkPath": "/downloads/streamily-tv.apk"
+  },
+  "features": [
+    {
+      "icon": "tv",
+      "title": "TV Ao Vivo",
+      "description": "Canais nacionais e internacionais em tempo real"
+    },
+    {
+      "icon": "data",
+      "title": "Zero Megas",
+      "description": "Navegue e assista sem consumir seu saldo de dados Movitel"
+    },
+    {
+      "icon": "lock",
+      "title": "Acesso Seguro",
+      "description": "Sistema de códigos renovados a cada 10 horas"
+    }
+  ],
+  "messages": [
+    {
+      "date": "2026-08-26",
+      "title": "Lançamento Oficial",
+      "text": "Streamily TV disponível para download. Aproveite sem gastar megas!"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screen1.jpg",
+      "label": "Tela Inicial"
+    },
+    {
+      "src": "/images/screen2.jpg",
+      "label": "Canais Ao Vivo"
+    }
+  ],
+  "social": {
+    "contact": "258848506197",
+    "whatsapp": "https://wa.me/qr/GDVNZIIQCLYFP1"
+  }
+}

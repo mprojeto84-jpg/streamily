@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Streamily TV - Filmes e TV Sem Gastar Megas Movitel</title>
+  <meta name="description" content="Assista filmes e TV sem gastar megas! Exclusivo Movitel. Zero consumo de dados.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div id="ad-banner" class="ad-banner" style="display: none;">
+    <div class="ad-content">
+      <span id="txt-publicidade">Publicidade</span>
+      <button onclick="closeBanner()" class="close-ad">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" id="svg-close-banner"></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="popup-ad-container" style="display: none;"></div>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-logo"></svg>
+        <span class="logo-text" id="txt-logo"></span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio" id="txt-nav-inicio"></a>
+        <a href="#recursos" id="txt-nav-recursos"></a>
+        <a href="#download" id="txt-nav-download"></a>
+        <a href="#" onclick="handleCodeClick(event)" id="txt-nav-codigo"></a>
+      </nav>
+      <button class="menu-btn" onclick="toggleDrawer()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" id="svg-menu"></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="drawer" class="drawer">
+    <div class="drawer-header">
+      <h3 id="txt-menu-title"></h3>
+      <button onclick="toggleDrawer()" class="close-drawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" id="svg-close-drawer"></svg>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <a href="#" onclick="handleFacebookClick(event)" class="drawer-item">
+        <svg viewBox="0 0 24 24" fill="currentColor" id="svg-facebook"></svg>
+        <span id="txt-facebook">Facebook</span>
+      </a>
+      <a href="#" onclick="handleWhatsAppClick(event)" class="drawer-item">
+        <svg viewBox="0 0 24 24" fill="currentColor" id="svg-whatsapp"></svg>
+        <span id="txt-whatsapp">WhatsApp Canal</span>
+      </a>
+      <a href="#" onclick="handleContactClick(event)" class="drawer-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-contact"></svg>
+        <span id="txt-contact">Contactos</span>
+      </a>
+    </div>
+  </div>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 id="txt-hero-title"></h1>
+        <p class="hero-subtitle" id="txt-hero-subtitle"></p>
+        <p class="hero-description" id="txt-hero-desc"></p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" onclick="handleDownloadClick(event)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-hero-download"></svg>
+            <span id="txt-hero-btn-download"></span>
+          </a>
+          <button onclick="handleCodeClick(event)" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-hero-lock"></svg>
+            <span id="txt-hero-btn-code"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-banner-container">
+    <iframe src="/ad-banner.html" width="320" height="50" frameborder="0" scrolling="no" loading="lazy"></iframe>
+  </div>
+
+  <section id="recursos" class="features">
+    <div class="container">
+      <h2 class="section-title" id="txt-features-title"></h2>
+      <div class="features-grid" id="features-grid">
+        <p class="loading-text" id="txt-features-loading"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <div class="container">
+      <h2 class="section-title" id="txt-gallery-title"></h2>
+      <div class="screenshots-grid" id="screenshots-grid"></div>
+    </div>
+  </section>
+
+  <div class="native-ad-container">
+    <script async="async" data-cfasync="false" src="https://pl31592964.profitableratecpmnetwork.com/892fc104e61bf87fb10dfd4db3058af3/invoke.js"></script>
+    <div id="container-892fc104e61bf87fb10dfd4db3058af3"></div>
+  </div>
+
+  <section id="download" class="download">
+    <div class="container">
+      <div class="download-content">
+        <h2 class="download-title" id="txt-download-title"></h2>
+        <p id="app-version" class="app-version"></p>
+        <div class="download-info">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-info-download"></svg>
+            <span id="app-size"></span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-info-android"></svg>
+            <span id="app-android"></span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-large btn-download" onclick="handleDownloadClick(event)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-download-btn"></svg>
+          <span id="txt-download-btn"></span>
+        </a>
+        
+        <div class="stats-container">
+          <div class="stat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-stat-views"></svg>
+            <div class="stat-info">
+              <span class="stat-number" id="stat-views">0</span>
+              <span class="stat-label" id="txt-stat-views"></span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-stat-downloads"></svg>
+            <div class="stat-info">
+              <span class="stat-number" id="stat-downloads">0</span>
+              <span class="stat-label" id="txt-stat-downloads"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-banner-container">
+    <iframe src="/ad-banner.html" width="320" height="50" frameborder="0" scrolling="no" loading="lazy"></iframe>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p id="txt-footer"></p>
+    </div>
+  </footer>
+
+  <div id="codeModal" class="modal">
+    <div class="modal-wrapper">
+      <div class="modal-ribbon modal-ribbon-top"></div>
+      <div class="modal-ribbon modal-ribbon-bottom"></div>
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeCodeDetails()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" id="svg-modal-close"></svg>
+        </button>
+        
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-modal-lock"></svg>
+          </div>
+          <h2 id="txt-modal-title"></h2>
+          <p class="modal-subtitle" id="txt-modal-subtitle"></p>
+        </div>
+        
+        <div id="codeSection" class="code-section">
+          <button id="generateBtn" class="btn btn-primary btn-generate" onclick="handleGenerateCodeClick(event)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" id="svg-modal-refresh"></svg>
+            <span id="txt-modal-btn-generate"></span>
+          </button>
+        </div>
+        
+        <div id="codeDisplay" class="code-display" style="display: none;">
+          <div class="code-box">
+            <span id="codeText" class="code-text"></span>
+            <button onclick="copyCode()" class="copy-btn" title="Copiar" id="btn-copy-code">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="svg-modal-copy"></svg>
+            </button>
+          </div>
+          <p class="code-expiry"><span id="txt-modal-expiry-label"></span> <span id="codeExpiry"></span></p>
+          <p class="code-tech" id="txt-modal-tech"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loadingOverlay" class="progress-overlay" style="display: none;">
+    <div class="progress-box">
+      <div class="spinner" id="svg-loading-spinner"></div>
+      <p id="txt-loading-msg">Gerando Token...</p>
+      <p style="font-size: 0.8rem; color: #00c853; margin-top: 10px;" id="txt-loading-timer">15s</p>
+      
+      <div style="width: 100%; height: 6px; background: #27272a; border-radius: 3px; margin-top: 20px; overflow: hidden;">
+        <div id="progressBarFill" style="height: 100%; background: #00c853; width: 0%; transition: width 1s linear;"></div>
+      </div>
+
+      <p style="font-size: 0.75rem; color: #888; margin-top: 15px;">Aguarde enquanto processamos o seu pedido.</p>
+    </div>
+  </div>
+
+  <script async src="https://pl31592940.profitableratecpmnetwork.com/47/65/11/4765117cf660cbaadb208422372d04cd.js"></script>
+
+  <script src="/js/app.js"></script>
+
+  <script async src="https://pl31592941.profitableratecpmnetwork.com/30/26/16/3026169ec6671c4abb9db1d6db9c03fe.js"></script>
+
+</body>
+</html>

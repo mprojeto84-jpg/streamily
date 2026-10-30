@@ -1,0 +1,20 @@
+{
+  "name": "mega-play-full-site",
+  "version": "2.0.0",
+  "description": "Site oficial MEGA Play Full - Seguro com API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "multer": "^2.2.0"
+  },
+  "author": "MEGA Play Full",
+  "license": "ISC"
+}
